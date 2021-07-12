@@ -8,5 +8,14 @@
 <p>test test test hello django test test test</p>
 <p>{% url 'test_template'  %}</p>
 <p>{{ test }}aaa</p>
+<p>{{ form }}aaa</p>
+<tbody>
+{% for i in siteusers %}
+<tr>
+    <td>{{ i.main_user_name }}</td>
+    <td>{{ i.real_name }}</td>
+</tr>
+{% endfor %}
+</tbody>
 </body>
 </html>
